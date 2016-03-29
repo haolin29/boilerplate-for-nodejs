@@ -5,7 +5,7 @@ var bodyParser = require('body-parser');
 var methodOverride = require('method-override');
 
 // Using use will make sure that every requests that hits this controller will pass through these functions.
-router.use(bodyParser.urlencoded({ extened: true }));
+router.use(bodyParser.urlencoded({ extended: true }));
 router.use(methodOverride(function(req, res) {
     if (req.body && typeof req.body === 'object' && '_method' in req.body) {
         // look in urlencoded POST bodies and delete it
@@ -149,6 +149,7 @@ router.put('/:id/edit', function(req, res) {
         member.update({
             name: name,
             // todo
+            // 
         }, function(err, memberID) {
             if (err) {
                 res.send("There was a problem updating the information to the database: " + err);
