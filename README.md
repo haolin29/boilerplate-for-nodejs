@@ -9,4 +9,6 @@ RESTful API
 
 
 ## how to run
-`npm start`
+open terminal 
+type `mongod`  
+than in a new tab type `npm start`
