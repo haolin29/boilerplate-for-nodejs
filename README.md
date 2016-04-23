@@ -13,4 +13,5 @@ open terminal
 cd to the dir
 type `npm i`
 type `mongod`  
+
 than in a new tab type `npm start`
